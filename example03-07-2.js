@@ -1,3 +1,3 @@
 let currentTemp = 19.5;
-const messgae = "現在の温度は" + currentTemp + "です"
+const messgae = "現在の温度は&{current}℃です";
 console.log(messgae);
