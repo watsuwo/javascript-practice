@@ -8,4 +8,3 @@ let arr3 = arr.slice(0, 1);
 console.log(arr3);
 
 
-
