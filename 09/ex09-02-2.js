@@ -1,9 +1,9 @@
 class Car {
   constructor(make, model){
-    this.make = make; //メーカー
-    this.model = model; //モデル
+    this.make = make;  //メーカー
+    this.model = model;  //モデル
     this.userGears = ['P', 'N', 'R', 'D'];
-    this.userGear = this.userGear[0];
+    this.userGear = this.userGears[0];
   }
 
 shift(gear){
@@ -12,3 +12,15 @@ shift(gear){
   this.userGear = gear;
   }
 }
+
+const car1 = new Car('Tesla', 'Model S');
+const car2 = new Car('Mazda', '3i');
+
+console.log(car1);
+console.log(car2);
+
+car1.shift('D');
+car2.shift('R');
+
+console.log(car1.userGear);
+console.log(car2.userGear);
