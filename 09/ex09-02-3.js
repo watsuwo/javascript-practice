@@ -7,6 +7,7 @@ class Car {
   }
 
 get userGear(){return this._userGear;}
+
 set userGear(value){
   if(this._userGears.indexOf(value) < 0)
     throw new Error(`ギア指定が正しくない: ${value}`);
