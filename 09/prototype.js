@@ -1,10 +1,8 @@
 let obj = {
-  name: "wataru"
+  name: "Wataru",
+  age: 24
 };
 
 console.log(obj);
 
-console.log(obj.__proto__):q!
-                           :q
-                           :q
-                           i;
+console.log(Object);
