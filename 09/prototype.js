@@ -3,6 +3,6 @@ let obj = {
   age: 24
 };
 
-console.log(obj);
+console.log(Object.prototype);
+console.log(obj.__proto__ === Object.prototype);
 
-console.log(Object);

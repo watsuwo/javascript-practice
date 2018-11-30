@@ -1,8 +1,10 @@
-function Person(name, age){
-  this.name = name;
-  this.age = age;
-};
+class Car1 {
+  constructor(name, model){
+    this.name = name;
+    this.model = model;
+  }
+}
 
-let person1 = Person("wataru", 24);
+let car1 = new Car1("tesla","s");
 
-console.log(person1);
+console.log(car1);
