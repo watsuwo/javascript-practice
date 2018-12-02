@@ -42,4 +42,13 @@ console.log(obj4.__proto__ === Array.prototype);
 
 console.log("-------------------------------");
 
-console.log(Object);
+let getProto = Object.getPrototypeOf ? Object.getPrototypeOf :
+  function getProto(obj){
+    return obj.__proto__;
+  };
+
+console.log(getProto(obj1) === Object.prototype);
+console.log(getProto(obj2) === Object.prototype);
+console.log(getProto(obj3) === Array.prototype);
+console.log(getProto(obj4) === Array.prototype);
+console.log("-------------------------------");
